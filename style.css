@@ -4,9 +4,9 @@
     }
 
 
-    #nav
+#nav
     {
-    display: inline;
+    display: inline-flexbox;
     width: 100%;
     margin: 100px;
     border-width: 2ch;
@@ -14,7 +14,7 @@
     text-align: center;
     }
 
-    #section
+#section
     {
     display: block;
     border-width: 2px;
@@ -22,7 +22,7 @@
     border-spacing: 2ch;
     }
 
-    #div
+#div
     {
     display: block;
     padding: 40ch;
