@@ -1,10 +1,10 @@
-#h1 #h3
+h1, h3
     { font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     }
 
 
-#nav
+nav
     {
     display: inline-flexbox;
     width: 100%;
@@ -14,7 +14,7 @@
     text-align: center;
     }
 
-#section
+section
     {
     display: block;
     border-width: 2px;
@@ -22,8 +22,12 @@
     border-spacing: 2ch;
     }
 
-#div
+div
     {
     display: block;
     padding: 40ch;
+    }
+img
+    {
+    float: left;
     }
