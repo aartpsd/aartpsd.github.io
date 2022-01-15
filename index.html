@@ -1,52 +1,73 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <!---Deleted the other meta tag because who even uses Internet Explorer anymore?-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---This viewport tag makes the webpage responsive to screen size-->
+        <link rel="stylesheet" href="style.css">
+        <!---This links the css and html file-->
+        <title>Odin Recipes</title>
+</head>
+
+<!-------------------
+    Container set up
+    -----------------
+         div 1
+    -------  --------
+    div 2      div 3
+    -----------------
+         footer
+--------------------->
 
 <body>
-<header id="top">
+    <script src="app.js"></script>
+    <div class="div1">
+        <header>
+            <h1>Odin Recipes</h1>
+        </header>
+    </div>
 
-    <meta charset="utf-8">
-    <meta name="">
-    
-    <img src="/Images/300x300darkbluelogo.jpg">
-    
-</header>
+    <!---Navigation bar-->
 
-<body>
-
-<div>
-    <section class="section">
-    <!--Div inside section or section inside div? -->
-
-        <h1> Where Details Matter </h1>
-        <h3> Triton Light Medical helps you navigate the complexities of the healthcare market. </h3>
-        <button style="align-content: center;"> <a href="aboutus.html"> Learn More </a> </button>
-
-    </section>
-</div>
-
-
-<div>
-    <section class="section">
-        <h1>A veteran-owned small business, Triton Light Medical brings to the market decades of project management and leadership experiences, alongside an unrelenting drive to deliver with excellence.</h1>
-        <h3>Deploying a hands-on approach allows us to connect the dots of the healthcare market, helps us to help you in supporting your objectives.</h3>
-        <aside><img src="#"></aside>
-    </section>
-</div>
-
-
-<div>
-    <section class="section">
-        <h4>Check out our high-tech offerings <a href="gateone.html">GATE1 </a> and <a href="outerperimeter.html">Outer Perimeter. </a> </h4>
-        <p style="align-content:flex-start;">GATE1 is a temperature sensing system powered by Artifical Intelligence. Here to help you battle COVID-19 and other illnesses.<p>
-        <p style="align-content: flex-end;">Outer Perimeter is a remote patient monitoring system</p>
-    </section>
-</div>
-
-
-<footer>
-<a href="#top">Return to Top</a>
-</footer>
-
+        <div class="div2">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Recipes</li>
+                    <ul>
+                        <li><a href="recipes/peachcake.html">Peach Cake</a></li>
+                        <li><a href="recipes/mirrorglaze.html">Mirror Glaze</a></li>
+                        <li><a href="recipes/applebrownbetty.html">Apple Brown Betty</a> </li>
+                    </ul>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    <!---End navbar-->  
+    <!---Begin main: includes the recipe container which holds description, h2, img and link-->  
+    <main>
+        <div class="div3">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
+            <h2 style="color: darkred;">Recipes</h2>
+                <div class="homerecipecontainerlinks">
+                    <div class="hrcl-div1">
+                        <p><a href="recipes/peachcake.html">Peach Cake</a></p>
+                        <p><a href="recipes/mirrorglaze.html">Mirror Glaze</a></p>
+                        <p><a href="recipes/applebrownbetty.html">Apple Brown Betty</a></p>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <!---End main-->
+    <!---Begin footer-->
+    <footer>
+        <!--Begin home button-->
+        <div class="returntohomebtn">
+            <h4><a href="index.html">Home</a></h4>
+        </div>   
+        <!--End home button-->
+    </footer>
+    <!---End footer-->
 </body>
-
 </html>
