@@ -1,19 +1,143 @@
-h1
-    { font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    }
+/*CSS basic style sheet
 
-p
-    {
-    font-family: Georgia, serif;
-    }    
+----------------------
 
-div
-    {
-    display: block;
-    padding: 40ch;
-    }
-img
-    {
+/    Container set up:
+/
+/    -----------------
+/          div 1
+/    -----  ----------
+/    div 2     div 3
+/    -----------------
+/        footer
+/
+----------------------*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: wheat;
+}
+.div1{
+    display: flex;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    top: auto;
+    font-size: 30pt;
+    color:darkolivegreen;
+    justify-content: center;
+    width: 100%;
+}
+/* The element below is only for non-Home/index pages. 
+At the top of the screen next to the page title will display 
+the current page's name i.e. about, recipies.*/
+
+/*End*/
+
+.div2 {
     float: left;
-    }
+    position: sticky;
+    display: flex;
+    flex-direction:row;
+    top: 20px;
+    width: 30%;
+}
+.navbar{
+    background-color: rgb(238, 290, 238);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
+    border-radius: 1ch;
+    padding: 10px;
+}
+.div3{
+    width: 100%;
+}
+.homerecipecontainerlinks{
+    display: grid;
+    background-color: rgb(238, 290, 238);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
+    border-radius: 1ch;
+    padding: 30px;
+    width: fit-content;
+}
+#headerabouttext{
+    background-color: transparent;
+    font-size: 22pt;
+    color: darkseagreen;
+    width: fit-content;
+}
+.aboutcontainer{
+    display: block;
+    background-color: rgb(238, 290, 238);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
+    border-radius: 1ch;
+    margin: 5px;
+    padding: 50px;
+    align-content: space-around;
+}
+.description {
+    font-size: medium;
+    font-style: italic;
+    color: black;
+}
+a, li, {
+    color: darkred;
+}   
+.subregulartext{
+    font-size: 22px;
+    color: darkred;
+    line-height: 30px;
+}
+.regulartext{
+    font-size: 30px;
+    line-height: 25px;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+.returntohomebtn{
+    background-color: darkolivegreen;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.30);
+    border-radius: 5ch;
+    width: 7%;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    position: sticky;
+    bottom: 20px;
+    margin: 2%;
+
+}
+.returntohomebtn a{
+    color: wheat;
+    font-size: 20pt;
+}
+/*Above is mostly for home/about page
+Recipe pages below*/
+.recipecontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(238, 290, 238);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
+}
+
+.recipecontainer h4{
+    font-size: 22px;
+}
+.recipecontainer li{
+    font-size: 20px;
+    color: #6d8518;
+}
+.recipecontainer img{
+    display: block;
+    margin: auto;
+}
