@@ -16,9 +16,6 @@
 * {
     font-family: 'Courier New', Courier, monospace;
 }
-body{
-    background-color: wheat;
-}
 .div1{
     display: flex;
 }
@@ -27,7 +24,6 @@ header{
     flex-direction: row;
     top: auto;
     font-size: 30pt;
-    color:darkolivegreen;
     justify-content: center;
     width: 100%;
 }
@@ -52,7 +48,7 @@ the current page's name i.e. about, recipies.*/
     padding: 10px;
 }
 .div3{
-    width: 100%;
+    width: 90%;
 }
 .homerecipecontainerlinks{
     display: grid;
@@ -104,7 +100,7 @@ main{
     margin: 2px;
 }
 .returntohomebtn{
-    background-color: darkolivegreen;
+    background-color: black;
     box-shadow: 0px 15px 30px rgba(0,0,0,0.30);
     border-radius: 5ch;
     width: 7%;
@@ -117,7 +113,7 @@ main{
 
 }
 .returntohomebtn a{
-    color: wheat;
+    color: white;
     font-size: 20pt;
 }
 /*Above is mostly for home/about page
