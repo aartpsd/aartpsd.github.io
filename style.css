@@ -52,9 +52,6 @@ the current page's name i.e. about, recipies.*/
 }
 .homerecipecontainerlinks{
     display: grid;
-    background-color: rgb(238, 290, 238);
-    box-shadow: 0px 15px 30px rgba(0,0,0,0.15);
-    border-radius: 1ch;
     padding: 30px;
     width: fit-content;
 }
