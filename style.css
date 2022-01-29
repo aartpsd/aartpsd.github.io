@@ -36,8 +36,7 @@ the current page's name i.e. about, recipies.*/
 .div2 {
     float: left;
     position: sticky;
-    display: inline;
-    flex-direction:row;
+    display: block;
     top: 20px;
     width: 30%;
 }
