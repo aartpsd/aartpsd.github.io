@@ -8,33 +8,60 @@
         <link rel="stylesheet" href="style.css">
         <!---This links the css and html file-->
         <title>Alexa's Dev Resume</title>
+
+<!-- storage-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+
+<script>
+
+function showhide()
+    {  
+         var div = document.getElementById("myNavbar");  
+         if (div.style.display !== "none") 
+         {  
+             div.style.display = "none";  
+         }  
+         else
+         {  
+             div.style.display = "block";  
+         }  
+    } 
+
+</script>
+
+<!--end storage-->
+
 </head>
 
 <body>
-    <script src="app.js"></script>
     <div class="div1">
         <header>
             <h1>Alexa's Dev Resume</h1>
         </header>
     </div>
 
-    <!---Navigation bar-->
-
         <div class="div2">
-            <div class="navbar">
+
+            <!---Navigation bar-->
+            <button id="button" onclick="showhide()"><i class="fas fa-ellipsis-v"></i></button>
+        
+            <div class="navbar" id="myNavbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li>Sites</li>
                     <ul>
                         <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
                         <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
                         <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
                     </ul>
-                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
+            <!---End navbar-->
+            
         </div>
-    <!---End navbar-->  
+         
     <!---Begin main: includes the recipe container which holds description, h2, img and link-->  
     <main>
         <div class="div3">
@@ -44,6 +71,7 @@
                     <div class="hrcl-div1">
                         <p><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></p>
                         <p><a href="https://tritonlightmedical.com">Triton Light Medical</a></p>
+                        <p><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></p>
                     </div>
                 </div>
         </div>

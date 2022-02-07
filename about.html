@@ -5,39 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Alexa's Dev Recipe</title>
+    <title>Alexa's Dev Resume</title>
   
 <!--Font storage-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-  
+<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
 <!--end fonts--> 
+<script>
 
+    function showhide()
+        {  
+             var div = document.getElementById("myNavbar");  
+             if (div.style.display !== "none") 
+             {  
+                 div.style.display = "none";  
+             }  
+             else
+             {  
+                 div.style.display = "block";  
+             }  
+        } 
+    
+    </script>
 </head>
 
 <body>
-    <script src="app.js"></script>
+    
     <div class="div1">
         <header>
             <h1>Alexa's Dev Resume</h1>
         </header>
     </div>
 
-    <!---Navigation bar-->
     <div class="div2">
-        <div class="navbar">
+    <!---Navigation bar-->
+    <button id="button" onclick="showhide()"><i class="fas fa-ellipsis-v"></i></button>
+    
+    <div class="navbar" id="myNavbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li>Sites</li>
             <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Sites</li>
-                    <ul>
-                        <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
-                        <li><a href="https://exciting-emerald-saxophone.glitch.me/about.html">Odin Recipes</a></li>
-                        <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
-                    </ul>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-        </div>  
-    </div>   
-    <!---End nav bar-->
+                <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
+                <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
+                <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
+            </ul>
+        </ul>
+    </div>
+    <!---End navbar-->
+    </div>
 
     <main>
         <div class="div3">
@@ -46,9 +63,9 @@
                 <p class="subregulartext">I'm a passionate creative and web developer skilled in Adobe Creative Suite, HTML, CSS, JavaScript and PHP. I have over four years of experience managing and updating websites in WordPress. I strive to build beautiful, responsive websites with elegant, functional UX and UI from scratch. Some of my experience is listed below.</p>
                   <ul>
                     <li>Student at Matoaca High School speciality center for Information Technology. Here, I learned what websites are, how they work, and how to manipulate them. I got IC3 certified which means I met a global benchmark for basic computer literacy, including operating systems, hardware, software, and networks.</li>
-                    <li>Digital Media Consultant at NC State University where I specialized in photography among other types of digital media.</li>
-                    <li>Freelance designer, in the midst of completing <a href="https://theodinproject.com">The Odin Project</a>. You can see my current project <a href="https://exciting-emerald-saxophone.glitch.me/about.html">here</a> or over on the nav bar.</li>
-                    <li>Created <a href="https://anartis2.wixsite.com/website">this</a> mockup site for my final project in COM 417 @ NC State University, an advanced topics course in communication and race.</li>
+                    <li>Digital Media Consultant at NC State University where I specialized in photography among other types of digital media. My portfolio will be up soon! Keep an eye out <a href="x">here</a> for it when it does drop.</li>
+                    <li>Freelance designer, in the midst of completing <a href="https://theodinproject.com">The Odin Project</a>. You can see my current project <a href="https://exciting-emerald-saxophone.glitch.me/about.html">here</a> or over on the nav bar by clicking Odin Recipes.</li>
+                    <li>Created <a href="https://anartis2.wixsite.com/website">this</a> mockup site for my final project in an advanced topics course in media, communication, and race.</li>
                   </ul>  
                 </p>
         </div>
