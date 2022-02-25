@@ -24,7 +24,7 @@ body{
     "navbar main main"
     "footer footer footer";
     grid-auto-rows: minmax(100px, auto);
-    background-color: #9ba47e
+    background-color: #9ba47e;
 }
 .div1, .div2, .div3, .div4{
     
@@ -124,11 +124,15 @@ a.active {
         background-color: #edf250;
         color: black;
     }
+
 .main2{
    justify-self: center;
 }
 h3{
     font-size: 35px;
+}
+h4{
+
 }
 .description {
     font-size: 30px;
@@ -152,3 +156,51 @@ hr{
 footer i{
     color: #edf250;
 }
+
+/*Begin gallery with hover text*/
+#gallery{
+    display:inline;
+    line-height: 0;
+}
+.graphicdesign, .advertisements, .wireframes{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+  }
+img{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    filter:grayscale(100%) blur(1px);
+ }
+#gallery img:hover {
+    filter:none;
+ }
+ 
+.graphicdesign img:hover{
+    transform: scale(2);
+    z-index: 1;
+}
+.advertisements img:hover{
+    transform: scale(4);
+    z-index: 1;
+}
+.wireframes img:hover{
+    transform: scale();
+    z-index: 1;
+}
+
+/*
+.graphicdesign img:active{
+    transform: scale(5);
+    z-index: 1;
+}
+.advertisements img:active{
+    transform: scale(6);
+    z-index: 1;
+}
+.wireframes img:active{
+    transform: scale(2.5);
+    z-index: 1;
+}
+*/
