@@ -16,19 +16,21 @@
 body{
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
+    background-color: #9ba47e;
+    background-image: url(Images/crinkle.png);
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
     "header header header"
-    "navbar main main"
+    "navbar navbar navbar"
+    "main main main"
     "footer footer footer";
     grid-auto-rows: minmax(100px, auto);
-    background-color: #9ba47e;
+
 }
 .div1, .div2, .div3, .div4{
-    
-/*When I wanted to enter my dev mode, add a border style so i can visualize where my divs are*/
+/*When I want to enter dev mode, add a border style so i can visualize where my divs are*/
 }
 .div1{
     grid-area: header;
@@ -39,7 +41,8 @@ body{
 }
 .div3{
     grid-area: main;
-    margin-right: 30px;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 .div4{
     grid-area: footer;
@@ -50,96 +53,117 @@ body{
     padding: 15px 300px;
     border-radius: 1ch;
 }
-header{
-    font-size: 35px;
-}
 header h1{
     font-family: 'Libre Baskerville', serif;
+    font-size: 70px;
     color: #ccf244;
     filter: drop-shadow(5px 5px 7px #828c63);
     display: inline-block;
 }
 header h2{
     color: black;
-    font-size: 35px;
+    font-size: 40px;
     display: inline-block;
-    filter: drop-shadow(0px 0px 2px #edf250)
-    ;
+    filter: drop-shadow(0px 0px 12px #ccf244);
 }
-/* The element above is only for non-Home/index pages. 
-At the top of the screen next to the page title will display 
-the current page's name i.e. about, recipies.*/
+h2{
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+h3{
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
+}
+h4{
+    color: black;
+    font-size: 35px;
+    font-weight: 400;
+}
+p {
+    font-size: 30px;
+    color: #edf250;
+    font-size: 30px;
+}
 
 .navbar {
     background-color: black;
-    border: #edf250;
-    border-style:solid;
     border-radius: 1ch;
     overflow: hidden;
     box-shadow: 12px 12px 7px #828c63;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  a.button{
+
+#nb1, #nb2, #nb3, #nb4{
+    min-width: fit-content;
+    padding: 2%;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+
+/*text mainly*/
+#button{
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 3ch;
+    transition-duration: 0.012s;
+}
+#button:hover{
+    transform: scale(0.9);
+}
+a.button{
     display:inline-block;
-    padding:0.46em 1.6em;
-    border:0.1em solid #000000;
-    margin:0 0.2em 0.2em 0;
-    border-radius:0.12em;
+    border-radius:1ch;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#000000;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     background-color:#FFFFFF;
-    text-align:center;
-    transition: all 0.15s;
-    }
-    a.button:hover{
+    transition: all 1s;
+}
+a.button:hover{
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
     border-color:#FFFFFF;
-    }
-    @media all and (max-width:30em){
-    a.button5{
-    display:block;
-    margin:0.4em auto;
-    }
-    }
-    /*links inside the navbar */
+}
+/*links inside the navbar */
+.dropdown-contet{
+    display: block;
+}
 li {
-        color: #ccf244;
-        padding: 1%;
-        font-size: 20px;
+    color: #ccf244;
+    padding: 1%;
+    font-size: 23px;
+
     }
+.navbar li{
+    display: inline;
+}
 a{
-        color: #ccf244;
+    color: #ccf244;
     }
     /*navbar links on hover */
 a:hover {
-        background-color: #828c6e;
-        color: black;
+    background-color: #828c6e;
+    color: black;
     }
     /*active class to highlight the current page */
 a.active {
-        background-color: #edf250;
-        color: black;
+    background-color: #edf250;
+    color: black;
     }
 
+#heytherepng{
+    float: inline-start;
+    width: 340px;
+    height: auto;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+    
 .main2{
    justify-self: center;
-}
-h3{
-    font-size: 35px;
-}
-h4{
-
-}
-.description {
-    font-size: 30px;
-    color: #edf250;
-}
-ul{
-    font-size: 25px;
 }
 .main2 img{
     justify-self: center;
@@ -156,6 +180,12 @@ hr{
 footer i{
     color: #edf250;
 }
+
+.italic-reveal:hover{
+    transform: scale(1);
+}
+/*end text*/
+
 
 /*Begin gallery with hover text*/
 #gallery{

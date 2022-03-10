@@ -40,46 +40,58 @@
     </div>
 
     <div class="div2">
+        <button id="button" onclick="showhide()">
+            <i class="fa-thin fa-x fa-xl"></i>
+        </button>
         <!---Navigation bar-->
-        <button id="button" onclick="showhide()"><i class="fas fa-ellipsis-v"></i></button>
-        
         <div class="navbar" id="myNavbar">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+
+            <div id="nb1">
+                <li><a href="index.html">Home</a></li>
+            </div>
+
+            <div id="nb2">
                 <li><a href="about.html">About</a></li>
-                <li>Portfolios</li>
-                <ul>
+            </div>
+
+            <div id="nb3">
+                <div id="dropdown">
+                <li class="droplist">Portfolios</li>
+                <ul class="dropdown-content">
                     <li><a href="/design.html">Design</a></li>
                     <li><a href="/photography.html" class="active">Photography</a></li>
                 </ul>
-                <li>Sites</li>
-                <ul>
+                </div>
+            </div>
+
+            <div id="nb4">
+                <li class="droplist">Sites</li>
+                <ul class="dropdown-content">
                     <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
                     <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
                     <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
-                    <li><a href="https://smoggy-dazzling-tilapia.glitch.me/">Odds and Ends playground</a></li>
+                    <li><a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a></li>
                 </ul>
-            </ul>
+            </div>
+
         </div>
         <!---End navbar-->
     </div>
 
-<!--Div 3 will need to be recustomized in the form of galleries. Could have two- 1 film and 1 digital or could split them into locations or themes and designate whether it's analog or digitala nother way-->
-<div class="div3">
+    <div class="div3">
     <main class="main1">
-       
+    
     </main>
 <hr>
     <main class="main2">
     <!--Main 2 can house a few images from my portfolio but there should be a separate page as well-->
     </main>
-</div>
+    </div>
 
-</div>
-
-<div class="div4">
+    <div class="div4">
     <footer>
         <p class="footer">Created with love by Alexa Nichole<i class="fa-regular fa-copyright fa-2xs"></i>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  <i class="fa-brands fa-pinterest fa-xl"></i>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a></p>
     </footer>
-</div>  
+    </div>
+
 </body>
