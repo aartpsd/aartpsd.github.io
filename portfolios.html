@@ -9,10 +9,12 @@
 
 <!--Font storage-->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-    <script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
 <!--End storage-->
 
 <script>
@@ -40,80 +42,78 @@
     </div>
 
     <div class="div2">
-        <button id="button" onclick="showhide()">
-            <i class="fa-thin fa-x fa-xl"></i>
+        <button id="menuButton" onclick="showhide()">
+            <i class="fa-solid fa-bars fa-xl"></i>
         </button>
+
         <!---Navigation bar-->
         <div class="navbar" id="myNavbar">
-
-            <div id="nb1">
-                <li><a href="index.html">Home</a></li>
-            </div>
-
-            <div id="nb2">
-                <li><a href="about.html">About</a></li>
-            </div>
-
-            <div id="nb3">
-                <div id="dropdown">
-                <li class="droplist" class="active">Portfolios</li>
-                <ul class="dropdown-content">
-                    <li><a href="/design.html">Design</a></li>
-                    <li><a href="/photography.html">Photography</a></li>
-                </ul>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="index.html">Home</a>
+                </button>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="about.html">About</a>
+                </button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Portfolio</button>
+                <div class="dropdown-content">
+                  <a href="/design.html">Design</a>
+                  <a href="/photography.html">Photography</a>
                 </div>
-            </div>
-
-            <div id="nb4">
-                <li class="droplist">Sites</li>
-                <ul class="dropdown-content">
-                    <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
-                    <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
-                    <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
-                    <li><a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a></li>
-                </ul>
-            </div>
-
+            </li>
+              <li class="dropdown">
+                <button class="dropbtn">Websites</button>
+                <div class="dropdown-content">
+                    <a href="https://tritonlightmedical.com">Triton Light Medical</a>
+                    <a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a>
+                    <a href="https://anartis2.wixsite.com/website">Black Film Analysis</a>
+                    <a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a>
+                </div>
+            </li>
         </div>
         <!---End navbar-->
     </div>
 
-<!--Div 3 will need to be recustomized in the form of galleries. Could have two- 1 film and 1 digital or could split them into locations or themes and designate whether it's analog or digitala nother way-->
-<div class="div3">
-    <main class="main1" id="gallery">
-        <h3>Graphic Design</3>
-        <div class="graphicdesign">
-            <img src="Images/Designs/andesigns.png">
-            <img src="Images/Designs/andesigns2.png">
-            <img src="Images/Designs/andesigns3.png">
-        </div>
-        <h3>Advertisements</h3>
-        <div class="advertisements">
-            <img src="Images/Designs/ad6.jpg">
-            <img src="Images/Designs/ad8.jpg">
-            <img src="Images/Designs/wirefram2.jpg">
-            <img src="Images/Designs/ad1.png">
-            <img src="Images/Designs/ad2.png">
-            <img src="Images/Designs/ad3.png">
-            <img src="Images/Designs/ad4.png">
-            <img src="Images/Designs/ad5.png">
-            <img src="Images/Designs/ad7.png">
-        </div>
-        <h3>Wireframes</h3>
-        <div class="wireframes">
-            <img src="Images/Designs/wireframe1.png">
-              
-        </div>  
-    </main>
-<hr>
-    <main class="main2">
-    <!--Main 2 can house a few images from my portfolio but there should be a separate page as well-->
-    </main>
-</div>
+    <div class="div3">
+        <main class="main1" id="gallery">
+            <h2><i class="fa-solid fa-barcode"></i> Graphic Design</h2>
+            <div class="graphicdesign">
+                <img src="Images/Designs/andesigns.png">
+                <img src="Images/Designs/andesigns2.png">
+                <img src="Images/Designs/andesigns3.png">
+            </div>
+            <h2><i class="fa-solid fa-barcode"></i> Advertisements</h2>
+            <div class="advertisements">
+                <img src="Images/Designs/ad6.jpg">
+                <img src="Images/Designs/ad8.jpg">
+                <img src="Images/Designs/wirefram2.jpg">
+                <img src="Images/Designs/ad1.png">
+                <img src="Images/Designs/ad2.png">
+                <img src="Images/Designs/ad3.png">
+                <img src="Images/Designs/ad4.png">
+                <img src="Images/Designs/ad5.png">
+                <img src="Images/Designs/ad7.png">
+            </div>
+            <h2><i class="fa-solid fa-barcode"></i> Wireframes</h2>
+            <div class="wireframes">
+                <img src="Images/Designs/wireframe1.png">
+                
+            </div>  
+        </main>
+    <hr>
+        <main class="main2">
+        <!--Main 2 can house a few images from my portfolio but there should be a separate page as well-->
+        </main>
+    </div>
 
-<div class="div4">
-    <footer>
-        <p class="footer">Created with love by Alexa Nichole<i class="fa-regular fa-copyright fa-2xs"></i>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  <i class="fa-brands fa-pinterest fa-xl"></i>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a></p>
-    </footer>
-</div>  
+    <div class="div4">
+        <footer>
+            <p class="footer">Created with love by Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
+        </footer>
+    </div>
+    </div> 
+
 </body>

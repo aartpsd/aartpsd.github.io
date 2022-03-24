@@ -1,25 +1,18 @@
-/*CSS basic style sheet
+/* 
+CSS for github site. 
+Fonts are from Google APIs, Icons from v.6 FontAwesome.com, background image from RawPixel.com.
+Images are my own licensed under ## 
+*/
 
-----------------------
-
-/    Container set up:
-/
-/    -----------------
-/          div 1
-/    -----  ----------
-/    div 2     div 3
-/    -----------------
-/        footer
-/
-----------------------*/
-
+/* Body houses the fonts for the page, bg color, image, and grid most importantly.
+Alter the grid from here */
 body{
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
     background-color: #9ba47e;
     background-image: url(Images/crinkle.png);
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
     "header header header"
@@ -27,22 +20,27 @@ body{
     "main main main"
     "footer footer footer";
     grid-auto-rows: minmax(100px, auto);
+}
 
-}
-.div1, .div2, .div3, .div4{
-/*When I want to enter dev mode, add a border style so i can visualize where my divs are*/
-}
+/* DIV1 the header,
+DIV2 is the navbar,
+DIV3 is the main,
+DIV4 is the footer */
 .div1{
     grid-area: header;
     justify-self: center;
 }
 .div2{
     grid-area: navbar;
+    text-align: center;
+    width: 100%;
 }
 .div3{
     grid-area: main;
+    margin-top: 5%;
     margin-left: 13%;
     margin-right: 13%;
+    line-height: 300%;
 }
 .div4{
     grid-area: footer;
@@ -50,11 +48,120 @@ body{
     font-size: 25px;
     background-color: black;
     color: #edf250;
-    padding: 15px 300px;
+    padding: 15px 200px;
     border-radius: 1ch;
 }
+
+/*Navigation bar below*/
+.navbar{
+    background-color: black;
+    padding: 1%;
+    margin-top: 0.5%;
+    display: inline-block;
+    width: 100%;
+    border-radius: 1ch;
+    overflow: hidden;
+    box-shadow: 12px 12px 7px #828c63;
+    }
+
+    /*Text in navbar*/
+    .navbar a{
+        font-family: 'Source Code Pro';
+    }
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: black;
+        color: #ccf244;
+        font-size: 20px;
+        border: none;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: static;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        max-width: fit-content;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: start;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: grey;
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Change the bg color of the button when the content is shown and the text color */
+   .dropdown:hover .dropbtn {
+        background-color: #89AC0C;
+        color: black;
+    }
+    /*Change the text when the dropdown centent is shown*/
+    .dropdown:hover .dropbtn {
+        color: black;
+    }
+    /*links inside the navbar */
+    .dropdown-contet{
+        display: block;
+    }
+    
+    li {
+        color: #ccf244;
+        padding: 1%;
+        font-size: 23px;
+        }
+
+    a {
+        color: #ccf244;
+        }
+
+    /*navbar links on hover */
+    a:hover {
+        background-color: #828c6e;
+        color: black;
+    }
+    
+    /*active class to highlight the current page */
+    a.active {
+        background-color: #edf250;
+        color: black;
+    }
+
+/*End Navigation bar*/
+
+#heytherepng{
+    float: inline-start;
+    width: 340px;
+    height: auto;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+
+.aboutIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*Begin text CSS*/
 header h1{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Courier Prime', serif;
     font-size: 70px;
     color: #ccf244;
     filter: drop-shadow(5px 5px 7px #828c63);
@@ -86,35 +193,16 @@ p {
     font-size: 30px;
 }
 
-.navbar {
-    background-color: black;
-    border-radius: 1ch;
-    overflow: hidden;
-    box-shadow: 12px 12px 7px #828c63;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-#nb1, #nb2, #nb3, #nb4{
-    min-width: fit-content;
-    padding: 2%;
-    position: relative;
-    display: inline-block;
-    align-self: center;
-}
-
-/*text mainly*/
-#button{
+#menuButton{
     background-color: lightgrey;
     padding: 10px;
-    border-radius: 3ch;
+    border-radius: 1em;
     transition-duration: 0.012s;
 }
-#button:hover{
+#menuButton:hover{
     transform: scale(0.9);
 }
-a.button{
+a.menuButton{
     display:inline-block;
     border-radius:1ch;
     box-sizing: border-box;
@@ -122,46 +210,11 @@ a.button{
     background-color:#FFFFFF;
     transition: all 1s;
 }
-a.button:hover{
+a.menuButton:hover{
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
     border-color:#FFFFFF;
-}
-/*links inside the navbar */
-.dropdown-contet{
-    display: block;
-}
-li {
-    color: #ccf244;
-    padding: 1%;
-    font-size: 23px;
-
-    }
-.navbar li{
-    display: inline;
-}
-a{
-    color: #ccf244;
-    }
-    /*navbar links on hover */
-a:hover {
-    background-color: #828c6e;
-    color: black;
-    }
-    /*active class to highlight the current page */
-a.active {
-    background-color: #edf250;
-    color: black;
-    }
-
-#heytherepng{
-    float: inline-start;
-    width: 340px;
-    height: auto;
-    z-index: 2;
-    margin-bottom: -70px;
-}
-    
+}   
 .main2{
    justify-self: center;
 }
@@ -177,12 +230,15 @@ hr{
     border-style: dashed;
     margin: 70px;
 }
+
+footer {
+    font-family: 'Source Code Pro';
+}
 footer i{
     color: #edf250;
 }
-
-.italic-reveal:hover{
-    transform: scale(1);
+footer p{
+    font-size: 25px;
 }
 /*end text*/
 

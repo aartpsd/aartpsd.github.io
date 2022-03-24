@@ -9,10 +9,12 @@
 
 <!--Font storage-->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-    <script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
 <!--End storage-->
 
 <script>
@@ -40,47 +42,48 @@
     </div>
 
     <div class="div2">
-        <button id="button" onclick="showhide()">
-            <i class="fa-thin fa-x fa-xl"></i>
+        <button id="menuButton" onclick="showhide()">
+            <i class="fa-solid fa-bars fa-xl"></i>
         </button>
+
         <!---Navigation bar-->
         <div class="navbar" id="myNavbar">
-
-            <div id="nb1">
-                <li><a href="index.html">Home</a></li>
-            </div>
-
-            <div id="nb2">
-                <li><a href="about.html" class="active">About</a></li>
-            </div>
-
-            <div id="nb3">
-                <div id="dropdown">
-                <li class="droplist">Portfolios</li>
-                <ul class="dropdown-content">
-                    <li><a href="/design.html">Design</a></li>
-                    <li><a href="/photography.html">Photography</a></li>
-                </ul>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="index.html">Home</a>
+                </button>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="about.html">About</a>
+                </button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Portfolio</button>
+                <div class="dropdown-content">
+                  <a href="/design.html">Design</a>
+                  <a href="/photography.html">Photography</a>
                 </div>
-            </div>
-
-            <div id="nb4">
-                <li class="droplist">Sites</li>
-                <ul class="dropdown-content">
-                    <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
-                    <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
-                    <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
-                    <li><a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a></li>
-                </ul>
-            </div>
-
+            </li>
+              <li class="dropdown">
+                <button class="dropbtn">Websites</button>
+                <div class="dropdown-content">
+                    <a href="https://tritonlightmedical.com">Triton Light Medical</a>
+                    <a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a>
+                    <a href="https://anartis2.wixsite.com/website">Black Film Analysis</a>
+                    <a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a>
+                </div>
+            </li>
         </div>
         <!---End navbar-->
     </div>
 
     <div class="div3">
         <main class="main1">
+            <h2><i class="fa-solid fa-barcode"></i> Intro</h2>
             <p>I am Alexa Nichole and I'm a web developer, designer and photographer.</p>
+            <div class="aboutIcons">
+                <i class="fa-solid fa-code-pull-request fa-4x"></i> <i class="fa-solid fa-palette fa-4x"></i> <i class="fa-solid fa-camera-retro fa-4x"></i>
+            </div>
             <p>I'm inspired by beautiful things to create beautiful things.</p>
             <p>Skilled in <i class="italic-reveal">Adobe Creative Suite, HTML, CSS, JavaScript and PHP.</i> I have over four years of experience managing and updating websites in <i>WordPress</i>. I strive to build beautiful, responsive websites with elegant, functional user-interface and user-experience with <i>HTML, CSS and JavaScript</i>. Some of my experience is listed below.</p>
                 <ul >
@@ -93,7 +96,15 @@
         </main>
     <hr>
         <main class="main2">
-        <!--Main 2 can house a few images from my portfolio but there should be a separate page as well-->
+            <h2><i class="fa-solid fa-barcode"></i> Values and Goals</h2>
+            <p>My goal is to keep costs minimal and the process seamless for small business owners who are just starting out, as well as those who have been around for a little longer. I do this by eliminating unnecessary obstacles with out-of-the-box, technical and creative thinking about developing and maintaning websites.</p>
+            <p>Take this website for example.</p>
+            <p>It looks like something you might find on WordPress or SquareSpace. It's modern, it's responsive, there are galleries and animations, but I'll let you in on a secret...</p>
+            <p>I built it from scratch and maintain it with almost non-exist overhead fees.</p>
+            <p>It's also 100% customized and personalized by non other than myself. </p>
+            <div class="aboutIcons"><i class="fa-solid fa-code-branch fa-4x"></i><i class="fa-solid fa-scale-balanced fa-4x"></i><i class="fa-solid fa-paintbrush fa-4x"></i></div>
+            <p></p>
+
         </main>
     </div>
 
@@ -101,7 +112,8 @@
 
     <div class="div4">
         <footer>
-            <p class="footer">Created with love by Alexa Nichole<i class="fa-regular fa-copyright fa-2xs"></i>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  <i class="fa-brands fa-pinterest fa-xl"></i>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a></p>
+            <p class="footer">Created with love by Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
         </footer>
-    </div>  
+    </div>
+
 </body>

@@ -12,10 +12,12 @@
 <!-- storage-->
 <!--Font storage-->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-    <script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
 <!--End storage-->
 
 <script>
@@ -45,47 +47,41 @@ function showhide()
             <h1>Alexa's Dev Resume</h1>
         </header>
     </div>
-
+    
     <div class="div2">
-        
-        <button id="button" onclick="showhide()">
-            <i class="fas fa-ellipsis-v"></i>
+        <button id="menuButton" onclick="showhide()">
+            <i class="fa-solid fa-bars fa-xl"></i>
         </button>
+
         <!---Navigation bar-->
         <div class="navbar" id="myNavbar">
-
-            <div id="nb1">
-                <li><a href="index.html" class="active">Home</a></li>
-            </div>
-
-            <div id="nb2">
-                <li><a href="about.html">About</a></li>
-            </div>
-
-            <div id="nb3">
-                <div id="dropdown">
-                <li class="droplist">Portfolios</li>
-                <ul class="dropdown-content">
-                    <li><a href="/design.html">Design</a></li>
-                    <li><a href="/photography.html">Photography</a></li>
-                </ul>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="index.html">Home</a>
+                </button>
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <a href="about.html">About</a>
+                </button>
+            </li>
+            <li class="dropdown">
+                <a href="/portfolios.html"><button class="dropbtn">Portfolios</button></a>
+                <div class="dropdown-content">
+                  <a href="/design.html">Design</a>
+                  <a href="/photography.html">Photography</a>
                 </div>
-            </div>
-
-            <div id="nb4">
-                <div id="dropdown">
-                <li class="droplist">Sites</li>
-                <ul class="dropdown-content">
-                    <li><a href="https://tritonlightmedical.com">Triton Light Medical</a></li>
-                    <li><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></li>
-                    <li><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></li>
-                    <li><a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a></li>
-                </ul>
+            </li>
+              <li class="dropdown">
+                <a href="websites.html"><button class="dropbtn">Websites</button></a>
+                <div class="dropdown-content">
+                    <a href="https://tritonlightmedical.com">Triton Light Medical</a>
+                    <a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a>
+                    <a href="https://anartis2.wixsite.com/website">Black Film Analysis</a>
+                    <a href="https://smoggy-dazzling-tilapia.glitch.me/">Glitch playground</a>
                 </div>
-            </div>
-
+            </li>
         </div>
-        <!---End navbar--> 
+        <!---End navbar-->
     </div>
          
     <div class="div3">
@@ -94,7 +90,7 @@ function showhide()
         <p>&emsp;&emsp;&emsp;&emsp;&emsp;Welcome to my website which doubles as my resume. As a web developer, designer and photographer, utilizing the Internet to showcase what I can do for you is helpful for us both. I get to practice what I preach, and you because you get to see my abilities and talents upfront. Everything on htis website I've built entirely from scratch, and I try to add something new and interesting every so often, so please come back and see what I've added.</p>
         <p>Click through and feel free to let me know your thoughts. Reach out by emailing me at alexa_artis@outlook.com ! </p>
 
-                <h2>Websites:</h2>
+                <h2><i class="fa-solid fa-barcode"></i> Websites:</h2>
                 <ul>
                     <p><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></p>
                     <p><a href="https://tritonlightmedical.com">Triton Light Medical</a></p>
@@ -102,12 +98,12 @@ function showhide()
                     <p><a href="https://smoggy-dazzling-tilapia.glitch.me/">Odds and Ends Playground</a></p>
                 </ul>
             
-                <h2>Designs and Illustrations</h2>
+                <h2><i class="fa-solid fa-barcode"></i> Designs and Illustrations</h2>
                 <ul>
 
                 </ul>
 
-                <h2>Photographs</h2>
+                <h2><i class="fa-solid fa-barcode"></i> Photographs</h2>
                 <ul>
 
                 </ul>
@@ -116,7 +112,8 @@ function showhide()
 
     <div class="div4">
         <footer>
-            <p class="footer">Created with love by Alexa Nichole<i class="fa-regular fa-copyright fa-2xs"></i>  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
+            <p class="footer">Created with love by Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
+            <p><a href="#">Site Map</a></p>
         </footer>
     </div>
 </body>
