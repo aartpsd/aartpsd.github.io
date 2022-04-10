@@ -1,16 +1,16 @@
 /* 
 CSS for github site. 
-Fonts are from Google APIs, Icons from v.6 FontAwesome.com, background image from RawPixel.com.
-Images are my own licensed under ## 
+Fonts are from Google APIs, Icons from v.6 FontAwesome.com.
+Portfolio images are my own licensed under ##
 */
 
-/* Body houses the fonts for the page, bg color, image, and grid most importantly.
-Alter the grid from here */
+/* Body houses the fonts for the page, background, and grid.
+Alter the grid tempalte from here */
 body{
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
-    background-color: #9ba47e;
-    background-image: url(Images/crinkle.png);
+    background-color: #F2F2F2;
+    /* background-image: url(Images/crinkle.png);*/
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
@@ -44,34 +44,60 @@ DIV4 is the footer */
 }
 .div4{
     grid-area: footer;
-    justify-self: center;
     font-size: 25px;
-    background-color: black;
-    color: #edf250;
-    padding: 15px 200px;
+    background-color: #DBDBDB;
+    width: 100%;
+    margin-top: 5%;
+    border: black;
     border-radius: 1ch;
+    border-style: solid;
+    border-width: medium;
+    padding: 0.5%;
+}
+footer{
+    font-family: 'Source Code Pro';
+}
+.floatLeft{
+    float: left;
+    padding-left: 5%;
+}
+.floatRight{
+    float: right;
+    padding-right: 5%;
 }
 
 /*Navigation bar below*/
 .navbar{
-    background-color: black;
+    background-color: #DBDBDB;
     padding: 1%;
     margin-top: 0.5%;
     display: inline-block;
     width: 100%;
     border-radius: 1ch;
+    border: black;
+    border-style: solid;
+    border-width: thick;
     overflow: hidden;
-    box-shadow: 12px 12px 7px #828c63;
+    box-shadow: 12px 12px 7px #6DD27C;
     }
-
     /*Text in navbar*/
     .navbar a{
         font-family: 'Source Code Pro';
+        color: #56A662;
+    }
+    button{
+        background-color: #DBDBDB;
+        padding: 10px;
+        border-radius: 1em;
+        transition-duration: 0.012s;
+    }
+    button:hover{
+        transform: scale(0.9);
+        transition-duration: 0.012s;
     }
     /* Dropdown Button */
     .dropbtn {
-        background-color: black;
-        color: #ccf244;
+        
         font-size: 20px;
         border: none;
     }
@@ -99,7 +125,7 @@ DIV4 is the footer */
     }
     /* Change color of dropdown links on hover */
     .dropdown-content a:hover {
-        background-color: grey;
+        background-color: #f9f9f9;
     }
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
@@ -107,50 +133,34 @@ DIV4 is the footer */
     }
     /* Change the bg color of the button when the content is shown and the text color */
    .dropdown:hover .dropbtn {
-        background-color: #89AC0C;
-        color: black;
-    }
-    /*Change the text when the dropdown centent is shown*/
-    .dropdown:hover .dropbtn {
+       /* background-color:rgba(98, 166, 50, 0.3);*/
         color: black;
     }
     /*links inside the navbar */
     .dropdown-contet{
         display: block;
     }
-    
-    li {
-        color: #ccf244;
-        padding: 1%;
-        font-size: 23px;
-        }
-
-    a {
-        color: #ccf244;
-        }
-
     /*navbar links on hover */
     a:hover {
-        background-color: #828c6e;
+        /*background-color: #828c6e;*/
         color: black;
     }
-    
     /*active class to highlight the current page */
     a.active {
-        background-color: #edf250;
+        /*background-color: #edf250;*/
         color: black;
     }
-
 /*End Navigation bar*/
 
+/*Main section CSS*/
 #heytherepng{
     float: inline-start;
-    width: 340px;
+    width: 55%;
     height: auto;
     z-index: 2;
     margin-bottom: -70px;
 }
-
+/*Icon styling for about section only*/
 .aboutIcons{
     display: flex;
     flex-direction: row;
@@ -158,24 +168,29 @@ DIV4 is the footer */
     margin-top: 5%;
     margin-bottom: 5%;
 }
+/*Shadow appears when icon is hovered over*/
+.fa-solid:hover{
+    filter: drop-shadow(0px 0px 40px #6dd27c);
+}
 
 /*Begin text CSS*/
 header h1{
     font-family: 'Courier Prime', serif;
     font-size: 70px;
-    color: #ccf244;
-    filter: drop-shadow(5px 5px 7px #828c63);
+    color: #6DD27C;
+    /*filter: drop-shadow(3px 1px 4px #000000);*/
     display: inline-block;
 }
 header h2{
     color: black;
-    font-size: 40px;
+    font-size: 35px;
     display: inline-block;
-    filter: drop-shadow(0px 0px 12px #ccf244);
+    filter: drop-shadow(0px 0px 25px #6dd27c);
 }
 h2{
     font-size: 45px;
     letter-spacing: 5px;
+    font-family: 'Source Code Pro';
 }
 h3{
     color: black;
@@ -189,10 +204,45 @@ h4{
 }
 p {
     font-size: 30px;
-    color: #edf250;
-    font-size: 30px;
+    color: #56A662;
 }
-
+/*link and anchor tafs*/
+li {
+    color: #62A632;
+    padding: 1%;
+    font-size: 23px;
+}
+a {
+    color: #6DD27C;
+}
+/*emphasis text turns to italic when hovered over*/
+.italic-reveal:hover{
+    font-style: italic;
+}
+/*Coming soon effect*/
+.comingSoon {
+    position: relative;
+    font-family: 'Courier Prime', serif;
+    font-size: 60px;
+    color: #6DD27C;
+}
+  .comingSoon span {
+    position: relative;
+    display: inline-block;
+    animation: flip;
+    animation-duration: 5s;
+    animation-delay: 0s;
+  }
+  .comingSoon span:hover {
+    position: relative;
+    display: inline-block;
+    text-transform: lowercase;
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+/*menu button*/
 #menuButton{
     background-color: lightgrey;
     padding: 10px;
@@ -214,7 +264,8 @@ a.menuButton:hover{
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
     border-color:#FFFFFF;
-}   
+}
+/*end menu button*/
 .main2{
    justify-self: center;
 }
@@ -225,25 +276,22 @@ a.menuButton:hover{
     width: auto;
 }
 hr{
-    border: #ccf244;
+    border: black;
     border-radius: 1px;
     border-style: dashed;
     margin: 70px;
 }
-
-footer {
+.div4 {
     font-family: 'Source Code Pro';
-}
-footer i{
-    color: #edf250;
-}
-footer p{
-    font-size: 25px;
-}
-/*end text*/
+    align-self: center;
+    padding: 10%;
+    border-radius: 1ch;
+    border: black;
+    border-width: thick;
+    border-style: solid;
 
-
-/*Begin gallery with hover text*/
+}
+/*Begin gallery with hover effect*/
 #gallery{
     display:inline;
     line-height: 0;
@@ -253,7 +301,7 @@ footer p{
     align-items: center;
     padding: 5%;
   }
-img{
+.div3 img{
     width: auto;
     height: auto;
     overflow: hidden;

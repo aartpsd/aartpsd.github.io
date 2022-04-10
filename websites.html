@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Alexa's Dev Resume</title>
-
-<!--Font storage-->
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
-<!--End storage-->
-
-<script>
+        <meta charset="UTF-8">
+        <!---Deleted the other meta tag because who even uses Internet Explorer anymore?-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---This viewport tag makes the webpage responsive to screen size-->
+        <link rel="stylesheet" href="style.css">
+        <!---This links the css and html file-->
+        <title>Alexa Nichole</title>
+    <!--Font storage via Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+    <!--Icons via fontawesome.com-->
+    <script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+    <!--Begin script for showing and hiding the navigation bar-->
+    <script>
     function showhide()
         {  
-             var div = document.getElementById("myNavbar");  
-             if (div.style.display !== "none") 
-             {  
-                 div.style.display = "none";  
-             }  
-             else
-             {  
-                 div.style.display = "block";  
-             }  
-        } 
+            var div = document.getElementById("myNavbar");  
+            if (div.style.display !== "none") 
+            {  
+                div.style.display = "none";  
+            }  
+            else
+            {  
+                div.style.display = "block";  
+            }  
+        }
     </script>
+    <!--End show/hide script-->
 </head>
 
 <body>
     
     <div class="div1">
         <header>
-            <h1>Alexa's Dev Resume</h1><h2> //development portfolio</h2>
+            <h1>Alexa's Nichole</h1><h2> //develops</h2>
         </header>
     </div>
 
     <div class="div2">
+        <!--Begin show/hide button for navigation bar-->
         <button id="menuButton" onclick="showhide()">
             <i class="fa-solid fa-bars fa-xl"></i>
         </button>
-
-        <!---Navigation bar-->
+        <!--End show/hide button-->
+        <!---Begin nav bar-->
         <div class="navbar" id="myNavbar">
             <li class="dropdown">
                 <button class="dropbtn">
@@ -58,14 +61,14 @@
                 </button>
             </li>
             <li class="dropdown">
-                <button class="dropbtn">Portfolio</button>
+                <a href="/portfolios.html"><button class="dropbtn">Portfolios</button></a>
                 <div class="dropdown-content">
                   <a href="/design.html">Design</a>
                   <a href="/photography.html">Photography</a>
                 </div>
             </li>
               <li class="dropdown">
-                <button class="dropbtn">Websites</button>
+                <a href="websites.html"><button class="dropbtn">Websites</button></a>
                 <div class="dropdown-content">
                     <a href="https://tritonlightmedical.com">Triton Light Medical</a>
                     <a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a>
@@ -74,44 +77,25 @@
                 </div>
             </li>
         </div>
-        <!---End navbar-->
+        <!---End nav bar-->
     </div>
 
     <div class="div3">
-    <main class="main1" id="gallery">
-        <h3>Graphic Design</3>
-        <div class="graphicdesign">
-            <img src="Images/Designs/andesigns.png">
-            <img src="Images/Designs/andesigns2.png">
-            <img src="Images/Designs/andesigns3.png">
-        </div>
-        <h3>Advertisements</h3>
-        <div class="advertisements">
-            <img src="Images/Designs/ad6.jpg">
-            <img src="Images/Designs/ad8.jpg">
-            <img src="Images/Designs/wirefram2.jpg">
-            <img src="Images/Designs/ad1.png">
-            <img src="Images/Designs/ad2.png">
-            <img src="Images/Designs/ad3.png">
-            <img src="Images/Designs/ad4.png">
-            <img src="Images/Designs/ad5.png">
-            <img src="Images/Designs/ad7.png">
-        </div>
-        <h3>Wireframes</h3>
-        <div class="wireframes">
-            <img src="Images/Designs/wireframe1.png">
-              
-        </div>  
-    </main>
-<hr>
-    <main class="main2">
-    <!--Main 2 can house a few images from my portfolio but there should be a separate page as well-->
-    </main>
+        <main class="main1">
+            <h2><i class="fa-solid fa-barcode"></i> Websites:</h2>
+            <ul>
+                <p><a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a></p>
+                <p><a href="https://tritonlightmedical.com">Triton Light Medical</a></p>
+                <p><a href="https://anartis2.wixsite.com/website">Black Film Analysis</a></p>
+                <p><a href="https://smoggy-dazzling-tilapia.glitch.me/">Odds and Ends Playground</a></p>
+            </ul>
+        </main>
     </div>
 
     <div class="div4">
-        <footer>
-            <p class="footer">Created with love by Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
-        </footer>
+            <footer>
+                <p class="floatLeft">Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="https://codepen.io/aartpsd"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a> <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></p>  
+                <p class="floatRight"><a href="mailto:alexa_artis@outlook.com">Email me!!</a></p>
+            </footer>
     </div>  
 </body>

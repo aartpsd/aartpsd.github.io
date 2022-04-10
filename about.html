@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Alexa's Dev Resume</title>
-
-<!--Font storage-->
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
-<script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
-<!--End storage-->
-
-<script>
+        <meta charset="UTF-8">
+        <!---Deleted the other meta tag because who even uses Internet Explorer anymore?-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---This viewport tag makes the webpage responsive to screen size-->
+        <link rel="stylesheet" href="style.css">
+        <!---This links the css and html file-->
+        <title>Alexa Nichole</title>
+    <!--Font storage via Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Assistant:wght@200;500&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kalam:wght@700&family=Molle:ital@1&display=swap">
+    <!--Icons via fontawesome.com-->
+    <script src="https://kit.fontawesome.com/6eee12199e.js" crossorigin="anonymous"></script>
+    <!--Begin script for showing and hiding the navigation bar-->
+    <script>
     function showhide()
         {  
-             var div = document.getElementById("myNavbar");  
-             if (div.style.display !== "none") 
-             {  
-                 div.style.display = "none";  
-             }  
-             else
-             {  
-                 div.style.display = "block";  
-             }  
-        } 
+            var div = document.getElementById("myNavbar");  
+            if (div.style.display !== "none") 
+            {  
+                div.style.display = "none";  
+            }  
+            else
+            {  
+                div.style.display = "block";  
+            }  
+        }
     </script>
+    <!--End show/hide script-->
 </head>
 
 <body>
     
     <div class="div1">
         <header>
-            <h1>Alexa's Dev Resume</h1><h2> //about</h2>
+            <h1>Alexa Nichole</h1><h2> //about</h2>
         </header>
     </div>
 
     <div class="div2">
+        <!--Begin show/hide button for navigation bar-->
         <button id="menuButton" onclick="showhide()">
             <i class="fa-solid fa-bars fa-xl"></i>
         </button>
-
-        <!---Navigation bar-->
+        <!--End show/hide button-->
+        <!---Begin nav bar-->
         <div class="navbar" id="myNavbar">
             <li class="dropdown">
                 <button class="dropbtn">
@@ -58,14 +62,14 @@
                 </button>
             </li>
             <li class="dropdown">
-                <button class="dropbtn">Portfolio</button>
+                <a href="/portfolios.html"><button class="dropbtn">Portfolios</button></a>
                 <div class="dropdown-content">
                   <a href="/design.html">Design</a>
                   <a href="/photography.html">Photography</a>
                 </div>
             </li>
               <li class="dropdown">
-                <button class="dropbtn">Websites</button>
+                <a href="websites.html"><button class="dropbtn">Websites</button></a>
                 <div class="dropdown-content">
                     <a href="https://tritonlightmedical.com">Triton Light Medical</a>
                     <a href="https://exciting-emerald-saxophone.glitch.me/index.html">Odin Recipes</a>
@@ -74,7 +78,7 @@
                 </div>
             </li>
         </div>
-        <!---End navbar-->
+        <!---End nav bar-->
     </div>
 
     <div class="div3">
@@ -85,25 +89,27 @@
                 <i class="fa-solid fa-code-pull-request fa-4x"></i> <i class="fa-solid fa-palette fa-4x"></i> <i class="fa-solid fa-camera-retro fa-4x"></i>
             </div>
             <p>I'm inspired by beautiful things to create beautiful things.</p>
-            <p>Skilled in <i class="italic-reveal">Adobe Creative Suite, HTML, CSS, JavaScript and PHP.</i> I have over four years of experience managing and updating websites in <i>WordPress</i>. I strive to build beautiful, responsive websites with elegant, functional user-interface and user-experience with <i>HTML, CSS and JavaScript</i>. Some of my experience is listed below.</p>
+            <p>Skilled in <span class="italic-reveal">Adobe Creative Suite</span>, <span class="italic-reveal">HTML</span>, <span class="italic-reveal">CSS</span>, <span class="italic-reveal">JavaScript</span> and <span class="italic-reveal">PHP.</span> I have over four years of experience managing and updating websites in <span class="italic-reveal">WordPress</span> and over 10 years experience in <span class="italic-reveal">landscape</span>, <span class="italic-reveal">portrait</span> and <span class="italic-reveal">documentary</span> photography.
+            <p>I strive to build beautiful, responsive websites with elegant, functional user-interface and user-experience with <span class="italic-reveal">HTML</span>, <span class="italic-reveal">CSS</span> and <span class="italic-reveal">JavaScript</span>.</p>
+            <h3>Credentials:</h3>
                 <ul >
                     <li>Student at Matoaca High School speciality center for Information Technology. Here, I learned what websites are, how they work, and how to manipulate them. I got IC3 certified which means I met a global benchmark for basic computer literacy, including operating systems, hardware, software, and networks.</li>
                     <li>Digital Media Consultant at NC State University where I specialized in photography while engaging with other types of digital media like music and podcasts. My portfolio will be up soon! Keep an eye out <a href="x">here</a> for it when it does drop. You'll be able to purchase physical and digital high-resolution prints of my work.</li>
-                    <li>Freelance designer, in the midst of completing <a href="https://theodinproject.com">The Odin Project</a> and Dr. Angela Yu's <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Complete 2022 Web Development Bootcamp</a>. You can see my current project both here, on this website, and <a href="https://exciting-emerald-saxophone.glitch.me/about.html">here</a> or over on the nav bar by clicking Odin Recipes.</li>
+                    <li>Freelance developer, in the midst of completing <a href="https://theodinproject.com">The Odin Project</a> and Dr. Angela Yu's <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Complete 2022 Web Development Bootcamp</a>. You can see my current project both here, on this website, and <a href="https://exciting-emerald-saxophone.glitch.me/about.html">here</a> or over on the nav bar by clicking Odin Recipes.</li>
                     <li>Created <a href="https://anartis2.wixsite.com/website">this</a> mockup site for my final project in an advanced topics course in media, communication, and race.</li>
                     <li>There's also <a href="https://smoggy-dazzling-tilapia.glitch.me/">this</a> odd collection of code I work on using <a href="Glitch.me">Glitch.me</a> before I add to <i>this</i> site using the whole process of the terminal + editor + GitHub.</li>
                 </ul>
         </main>
-    <hr>
         <main class="main2">
             <h2><i class="fa-solid fa-barcode"></i> Values and Goals</h2>
-            <p>My goal is to keep costs minimal and the process seamless for small business owners who are just starting out, as well as those who have been around for a little longer. I do this by eliminating unnecessary obstacles with out-of-the-box, technical and creative thinking about developing and maintaning websites.</p>
-            <p>Take this website for example.</p>
-            <p>It looks like something you might find on WordPress or SquareSpace. It's modern, it's responsive, there are galleries and animations, but I'll let you in on a secret...</p>
+            <p>As a freelance developer and designer, my goal is to keep costs minimal and the process seamless for small businesses. I do this by eliminating unnecessary obstacles with out-of-the-box, technical and creative thinking about how to develop and maintain websites.</p>
+            <p>Take this for example.</p>
+            <p>It looks like something you might find on WordPress or Wix or SquareSpace. It's modern, it's responsive, there are galleries and animations, but I'll let you in on a secret...</p>
             <p>I built it from scratch and maintain it with almost non-exist overhead fees.</p>
             <p>It's also 100% customized and personalized by non other than myself. </p>
+            <p>Now, this isn't ideal for everyone. Many businesses need higher levels of security through SSL and data encryption, or need e-commerce shops or applications. Well, I do those too!</p>
             <div class="aboutIcons"><i class="fa-solid fa-code-branch fa-4x"></i><i class="fa-solid fa-scale-balanced fa-4x"></i><i class="fa-solid fa-paintbrush fa-4x"></i></div>
-            <p></p>
+            <p>Whatever your digital needs are, known to you already or not, I'd be more than happy to help assist. I offer initial consultation for $50/ hour, which you can email me about at: alexa_artis@outlook.com</p>
 
         </main>
     </div>
@@ -112,7 +118,8 @@
 
     <div class="div4">
         <footer>
-            <p class="footer">Created with love by Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a>  <i class="fa-brands fa-instagram-square fa-2xl"></i>  <i class="fa-brands fa-facebook fa-xl"></i>  <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>  </p>
+            <p class="floatLeft">Alexa Nichole  <a href="https://github.com/aartpsd"><i class="fa-brands fa-github fa-xl"></i></a>  <a href="https://codepen.io/aartpsd"><i class="fa-brands fa-codepen fa-2xl"></i></a>  <a href="https://dribbble.com/aartpsd"><i class="fa-brands fa-dribbble-square fa-2xl"></i></a>  <a href="https://pin.it/1MMcqb0"><i class="fa-brands fa-pinterest fa-xl"></i></a> <a href="https://www.linkedin.com/in/alexa-a-9b135b84/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></p>  
+            <p class="floatRight"><a href="mailto:alexa_artis@outlook.com">Email me!!</a></p>
         </footer>
     </div>
 
