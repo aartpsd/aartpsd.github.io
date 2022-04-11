@@ -65,7 +65,9 @@ footer{
     float: right;
     padding-right: 5%;
 }
-
+#resumeImg{
+    margin: auto;
+}
 /*Navigation bar below*/
 .navbar{
     background-color: #DBDBDB;
@@ -97,7 +99,6 @@ footer{
     }
     /* Dropdown Button */
     .dropbtn {
-        
         font-size: 20px;
         border: none;
     }
@@ -125,7 +126,7 @@ footer{
     }
     /* Change color of dropdown links on hover */
     .dropdown-content a:hover {
-        background-color: #f9f9f9;
+        background-color: #f2f2f2;
     }
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
@@ -134,7 +135,8 @@ footer{
     /* Change the bg color of the button when the content is shown and the text color */
    .dropdown:hover .dropbtn {
        /* background-color:rgba(98, 166, 50, 0.3);*/
-        color: black;
+        color: white;
+        filter: drop-shadow(1px 1px 10px #6DD27C);
     }
     /*links inside the navbar */
     .dropdown-contet{
