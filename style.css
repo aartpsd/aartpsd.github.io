@@ -44,7 +44,6 @@ DIV4 is the footer */
 }
 .div4{
     grid-area: footer;
-    font-size: 25px;
     background-color: #DBDBDB;
     width: 100%;
     margin-top: 5%;
@@ -321,12 +320,16 @@ hr{
     /*for smartphone*/
     @media only screen 
    and (max-width : 375px) {
-   header h1{font-size: 2em;}
-   header h2{font-size: 1.3em}
+   header h1{font-size: 1.2em;}
+   header h2{font-size: 1.2em}
    h2{font-size: 1.5em;}
    h3{font-size: 1.125em;}
    h4{font-size: 100%;}
    p{font-size: 1em;}
+   .div1{width: 100%;}
+   .div2{}
+   .div3{margin: 0%;line-height: 200%;}
+   .div4{}
    }
 
 }
