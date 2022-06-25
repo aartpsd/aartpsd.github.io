@@ -55,7 +55,7 @@ DIV4 is the footer */
 }
 footer{
     font-family: 'Source Code Pro';
-    font-size: 55%;
+    font-size: 70%;
 }
 .floatLeft{
     float: left;
@@ -338,8 +338,8 @@ hr{
    and (max-width : 768px) {
    /* Styles here */
 }
-  /*Gallery Media queries below*/
   
+/*Gallery Media queries below*/
   @media (max-width:1500px) {
      .gallery {
       column-count:         6;
